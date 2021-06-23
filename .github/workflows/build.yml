@@ -32,7 +32,7 @@ jobs:
       - name: Docker Login
         run: > 
           echo ${{secrets.DOCKER_PASSWORD}} | 
-          docker login ghcr.io --username 
+          docker login --username 
           ${{ steps.get_repo_owner.outputs.repo_owner }} 
           --password-stdin
       - name: Publish functions
