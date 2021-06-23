@@ -1,12 +1,16 @@
 {
   "name": "function",
   "version": "1.0.0",
-  "description": "",
+  "description": "OpenFaaS Function",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" "
+    "test": "mocha test.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Marc",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.0"
+  }
 }
