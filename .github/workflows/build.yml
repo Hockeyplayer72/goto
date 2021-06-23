@@ -31,10 +31,9 @@ jobs:
           tr '[:upper:]' '[:lower:]')
       - name: Docker Login
         run: > 
-          echo ${{secrets.DOCKER_PASSWORD}} | 
           docker login --username 
           ${{ steps.get_repo_owner.outputs.repo_owner }} 
-          --password-stdin
+          --password ${{secrets.DOCKER_PASSWORD}}
       - name: Publish functions
         run: >
           OWNER="${{ steps.get_repo_owner.outputs.repo_owner }}" 
