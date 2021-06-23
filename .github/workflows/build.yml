@@ -45,4 +45,4 @@ jobs:
         run: >
           OWNER="${{ steps.get_repo_owner.outputs.repo_owner }}"
           TAG="${{ github.sha }}"
-          faas-cli deploy --gateway http://IP:8080/
+          faas-cli deploy --gateway http://10.100.39.99:8080/
