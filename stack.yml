@@ -6,5 +6,5 @@ functions:
   goto:
     lang: node12
     handler: ./goto
-    image: goto:latest
+    image: hockeyplayer72/goto:latest
 
